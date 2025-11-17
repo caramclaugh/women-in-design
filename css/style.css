@@ -1,0 +1,54 @@
+body {
+    background: #d096705e;
+    color:rgb(0, 0, 0) 
+}
+
+section, header {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+section, header {
+    margin-bottom: 4rem;
+
+}
+
+header, h2, blockquote {
+    font-family: "Noto Serif", serif;
+}
+
+section{
+    font-family: "Noto Sans", sans-serif;
+}
+
+header, blockquote {
+          color: #740030;
+}
+
+strong {
+          color: #c04362;
+          font-size: 1.562rem;
+}
+
+header h1 {
+    font-size: 4.768rem;
+    line-height: 1;
+    font-family: "Great Vibes", cursive;
+}
+
+header h2{
+    font-size: 1.953rem;
+    font-style:oblique
+}
+
+header p{
+    font-size: 1.562rem;
+}
+
+blockquote{
+    font-size: 1.562rem;
+    font-style: italic;
+    hanging-punctuation: first;
+    text-indent: -0.45rem;
+}
