@@ -42,13 +42,82 @@ header h2{
     font-style:oblique
 }
 
-header p{
+header p {
     font-size: 1.562rem;
 }
 
-blockquote{
+blockquote {
     font-size: 1.562rem;
     font-style: italic;
     hanging-punctuation: first;
     text-indent: -0.45rem;
+}
+
+/*-- Hyperlinks --*/
+a {
+    color: #740030;
+    font-weight: 700px;
+    text-decoration: wavy;
+}
+
+a:hover {
+    color: #290011;
+}
+
+/*-- Navigation Bar--*/
+.repsonsivenav {
+    background-color: #c04362;
+    padding: 5px;
+}
+
+#logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+nav{
+    text-align: right;
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    text-align: right;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    list-style-type: none;
+    padding-right:50x;
+}
+
+nav ul li{
+    display: inline;
+    margin: 5px;
+}
+
+nav a{
+    border-bottom: none;
+    color: #8f2c45;
+    padding: 10px;
+}
+
+nav a:hover {
+    transition: all 1s ease-in-out;
+}
+
+/*-- Styling the footer --*/
+
+footer {
+    background-color: none;
+    color: #c04362;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 4rem 0;
+}
+
+footer a {
+    color: #a62c4a
+}
+
+footer a:hover{
+    transition: all 1s ease-in-out;
 }
