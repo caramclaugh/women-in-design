@@ -16,6 +16,8 @@ section, header {
 
 header, h2, blockquote {
     font-family: "Noto Serif", serif;
+    color: #740030;
+    font-weight: 500;
 }
 
 section{
@@ -31,10 +33,12 @@ strong {
           font-size: 1.562rem;
 }
 
-header h1 {
+h1 {
     font-size: 4.768rem;
     line-height: 1;
-    font-family: "Great Vibes", cursive;
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    color: #740030;
 }
 
 header h2{
@@ -65,15 +69,22 @@ a:hover {
 }
 
 /*-- Navigation Bar--*/
-.repsonsivenav {
-    background-color: #c04362;
+.responsivenav {
+    background-color: #edbeb4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
     padding: 5px;
+    font-size: 1.2rem;
 }
+
 
 #logo {
     font-family: "Great Vibes", cursive;
     font-size: 2.5rem;
-    padding: 10px;
+    padding-left:50px;
 }
 
 nav{
@@ -105,19 +116,8 @@ nav a:hover {
 }
 
 /*-- Styling the footer --*/
-
 footer {
-    background-color: none;
-    color: #c04362;
     text-align: center;
-    font-size: 0.8rem;
-    padding: 4rem 0;
-}
-
-footer a {
-    color: #a62c4a
-}
-
-footer a:hover{
-    transition: all 1s ease-in-out;
+    background-color: #edbeb4;
+    padding: 10px;
 }
