@@ -1,6 +1,5 @@
 body {
-    background: #d096705e;
-    color:rgb(0, 0, 0) 
+    background: #ffffff;
 }
 
 section, header {
@@ -70,7 +69,7 @@ a:hover {
 
 /*-- Navigation Bar--*/
 .responsivenav {
-    background-color: #edbeb4;
+    background-color: #FBE8B5;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -79,7 +78,6 @@ a:hover {
     padding: 5px;
     font-size: 1.2rem;
 }
-
 
 #logo {
     font-family: "Great Vibes", cursive;
@@ -91,6 +89,8 @@ nav{
     text-align: right;
     padding: 1.5rem 0;
 }
+
+/*-- Styling the Navigation List --*/
 
 nav ul {
     text-align: right;
@@ -105,6 +105,8 @@ nav ul li{
     margin: 5px;
 }
 
+/*-- Styling nav hyperlinks --*/
+
 nav a{
     border-bottom: none;
     color: #8f2c45;
@@ -115,9 +117,70 @@ nav a:hover {
     transition: all 1s ease-in-out;
 }
 
+/*-- Creating responsive images--*/
+
+.gridimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 700px) {
+    .gridimage{
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .gridimage{
+        max-width: 200px; 
+   }
+}
+
 /*-- Styling the footer --*/
 footer {
     text-align: center;
-    background-color: #edbeb4;
+    align-items: center;
+    background-color: #FBE8B5;
     padding: 10px;
+}
+
+/*--Quote: Styling and responsiveness --*/
+.quote {
+    background-color: #FBE8B5;
+    padding: 20px;
+}
+
+/* Making larger text responsive for small screens*/
+@media (max-width: 600px) {
+  .quote p{
+    font-size: 1rem;
+  }
+  header p{
+    font-size: 1rem;
+  }
+  .responsivenav{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/*-- Images --*/
+
+img{
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 0%;
+}
+
+hr {
+    max-width: 900px;
+    width: 80% ;
 }
