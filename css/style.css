@@ -67,7 +67,8 @@ a:hover {
     color: #290011;
 }
 
-/*-- Navigation Bar--*/
+/*-- NAVIGATION BAR --*/
+/*-- Styling --*/
 .responsivenav {
     background-color: #FBE8B5;
     padding: 20px;
@@ -106,7 +107,6 @@ nav ul li{
 }
 
 /*-- Styling nav hyperlinks --*/
-
 nav a{
     border-bottom: none;
     color: #8f2c45;
@@ -117,8 +117,50 @@ nav a:hover {
     transition: all 1s ease-in-out;
 }
 
-/*-- Creating responsive images--*/
+/*-- FOOTER --*/
+/*-- Styling the footer --*/
+footer {
+    text-align: center;
+    align-items: center;
+    background-color: #FBE8B5;
+    padding: 10px;
+}
 
+/*--Styling the quotes background --*/
+.quote {
+    background-color: #FBE8B5;
+    padding: 20px;
+}
+
+/* Making larger text responsive for small screens*/
+@media (max-width: 600px) {
+  .quote p{
+    font-size: 1rem;
+  }
+  header p{
+    font-size: 1rem;
+  }
+  .responsivenav{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*-- IMAGES --*/
+/*-- Styling images --*/
+
+img{
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 0%;
+}
+
+hr {
+    max-width: 900px;
+    width: 80% ;
+}
+
+/*-- Creating responsive images--*/
 .gridimage {
     display: flex;
     flex-direction: row;
@@ -141,46 +183,4 @@ nav a:hover {
     .gridimage{
         max-width: 200px; 
    }
-}
-
-/*-- Styling the footer --*/
-footer {
-    text-align: center;
-    align-items: center;
-    background-color: #FBE8B5;
-    padding: 10px;
-}
-
-/*--Quote: Styling and responsiveness --*/
-.quote {
-    background-color: #FBE8B5;
-    padding: 20px;
-}
-
-/* Making larger text responsive for small screens*/
-@media (max-width: 600px) {
-  .quote p{
-    font-size: 1rem;
-  }
-  header p{
-    font-size: 1rem;
-  }
-  .responsivenav{
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-/*-- Images --*/
-
-img{
-    max-width: 100%;
-    min-width: 100%;
-    margin-bottom: 0%;
-}
-
-hr {
-    max-width: 900px;
-    width: 80% ;
 }
