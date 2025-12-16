@@ -1,7 +1,9 @@
+/*-- Background colour --*/
 body {
     background: #ffffff;
 }
 
+/*-- Margins and width --*/
 section, header {
     width: 80%;
     max-width: 900px;
@@ -13,6 +15,7 @@ section, header {
 
 }
 
+/*-- Fonts and font colours --*/
 header, h2, blockquote {
     font-family: "Noto Serif", serif;
     color: #740030;
@@ -32,6 +35,11 @@ strong {
           font-size: 1.562rem;
 }
 
+hr {
+    background-color: #740030;
+    height: 3px;
+}
+
 h1 {
     font-size: 4.768rem;
     line-height: 1;
@@ -40,9 +48,18 @@ h1 {
     color: #740030;
 }
 
+
 header h2{
     font-size: 1.953rem;
     font-style:oblique
+}
+
+h2 {
+    margin-top: 5%;
+}
+
+footer h2 {
+    margin-top: 2%;
 }
 
 header p {
@@ -54,6 +71,17 @@ blockquote {
     font-style: italic;
     hanging-punctuation: first;
     text-indent: -0.45rem;
+}
+
+/*-- Spacing --*/
+body, blockquote, header p {
+    line-height: 160%
+}
+
+@media (max-width: 600px) {
+    blockquote {
+        line-height: 120%;
+    }
 }
 
 /*-- Hyperlinks --*/
@@ -117,6 +145,17 @@ nav a:hover {
     transition: all 1s ease-in-out;
 }
 
+/*-- Navigation bar mobile layout --*/
+@media (max-width: 700px){
+    .responsivenav{
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    #logo {
+        padding-left: 30px;
+    }
+}
+
 /*-- FOOTER --*/
 /*-- Styling the footer --*/
 footer {
@@ -133,16 +172,12 @@ footer {
 }
 
 /* Making larger text responsive for small screens*/
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .quote p{
     font-size: 1rem;
   }
   header p{
     font-size: 1rem;
-  }
-  .responsivenav{
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -169,7 +204,6 @@ hr {
     max-width: 300px;
     margin: 0 auto;
 }
-
 
 @media (max-width: 700px) {
     .gridimage{
